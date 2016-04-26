@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 
-mkdir -p "/docs/"
-mv *.* /docs/
+mkdir -p "$BUILD_DIR/docs/"
+mv $BUILD_DIR/*.* $BUILD_DIR/docs/
