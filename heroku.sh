@@ -4,7 +4,11 @@
 echo "Moving content into docs folder"
 mkdir -p "./docs/"
 shopt -s extglob dotglob
-mv !(docs) docs
+mv ./*.* docs
+mv articles docs
+mv media docs
+mv snippets docs
+mv updates docs
 git clone https://$GITHUB_USER_NAME:$GITHUB_ACCESS_TOKEN@github.com/auth0/auth0-docs.git auth0-docs-repo
 
 echo "Moving docs site into root folder"
